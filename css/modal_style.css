@@ -1,0 +1,149 @@
+/* Modal */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  width: 400px;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 5% auto;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  animation-name: modal-open;
+  animation-duration: 0.2s;
+  padding: 10PX;
+  transition: 0.2s;
+}
+
+@keyframes modal-open {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#btn_close {
+  float: right;
+  font-size: 60px;
+  cursor: pointer;
+}
+
+#btn_close:hover {
+  color: rgba(0, 0, 0, 1)
+}
+
+.modal-header {
+  height: 50px;
+  margin: 20px 20px;
+  font-size: 20px;
+}
+
+.modal-header h2 {
+  margin: 0;
+}
+
+.modal-body {
+  height: 300px;
+  padding: 20px;
+}
+
+#input-content {
+  width: 100%;
+  height: 250px;
+  border: none;
+  resize: none;
+  padding: 10px;
+  margin-left: -15px;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+}
+
+.modal-footer {
+  height: 50px;
+  text-align: right;
+}
+
+#btn_add {
+  font-size: 18px;
+  float: right;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+#btn_add:hover {
+  color: rgba(0, 0, 0, 1);
+}
+.colors{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: -40px;
+  padding: 3px;
+}
+
+.colors div{
+  margin: 3px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.colors div:hover{
+  border: 2px solid #607D8B;
+}
+
+
+/* Mobile Screens Portrait*/
+@media (min-width: 100px) {
+  .modal-content {
+    width: 100%;
+  }
+  .colors div{
+    width: 15px;
+    height: 15px;
+  }
+}
+
+/* Mbile Screens Lands*/
+@media (orientation: landscape) {
+  .modal-content {
+    width: 90%;
+  }
+  .colors div{
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Tablets */
+@media (min-width: 600px) {
+  .modal-content {
+    width: 70%;
+  }
+  .colors div{
+    width: 36px;
+    height: 36px;
+  }
+}
+
+/* PC */
+@media (min-width: 900px) {
+  .modal-content {
+    width: 70%;
+  }
+  .colors div{
+    width: 36px;
+    height: 36px;
+  }
+}

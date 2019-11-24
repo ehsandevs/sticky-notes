@@ -1,0 +1,68 @@
+.search_panel {
+  height: 50px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  margin-bottom: 8px;
+  width: 60%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.search_icon {
+  width: 40px;
+  height: 40px;
+  background: url("../img/magnify.png") no-repeat;
+  float: left;
+  margin: 7px;
+  margin-right: 10px;
+  opacity: 0.5;
+}
+
+.search_line {
+  width: inherit;
+}
+
+#search_input {
+  width: 70%;
+  font-size: 16px;
+  padding: 13px 0 12px 10px;
+  border: none;
+  margin-right: 10px;
+}
+
+/* Mobile Screens Portrait*/
+
+@media (min-width: 100px) {
+  .search_panel {
+    width: 100%;
+  }
+  .search_line {
+    margin-top: -18px;
+  }
+}
+
+/* Mbile Screens Lands*/
+
+@media (orientation: landscape) {
+  .search_panel {
+    width: 90%;
+  }
+}
+
+/* Tablets */
+
+@media (min-width: 600px) {
+  .search_panel {
+    width: 70%;
+  }
+}
+
+/* PC */
+
+@media (min-width: 900px) {
+  .search_panel {
+    width: 70%;
+  }
+}
